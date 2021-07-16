@@ -1,0 +1,11 @@
+const { User } = require('./modles');
+
+const resolvers = {
+	Query: {
+		users: async () => {
+			return await User.find({});
+		}
+	}
+};
+
+module.exports = resolvers;
