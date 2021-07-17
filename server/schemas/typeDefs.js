@@ -19,6 +19,11 @@ const typeDefs = gql`
     link: String
     title: String
   }
+
+	type Query {
+		user: User
+	}
+
 `;
 
 module.exports = typeDefs;
