@@ -19,12 +19,12 @@ type User {
     savedBooks: [Book]
   }
 input savedBook {
+    bookId: String
+    authors: [String]
     description: String
     title: String
-    bookId: String
     image: String
     link: String
-    authors: [String]
 }
 type Query {
     me: User  
